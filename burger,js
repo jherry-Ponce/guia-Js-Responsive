@@ -1,0 +1,27 @@
+
+ function mostrar(e){
+    var abir=document.querySelector('.menu-despliegue');
+    abir.style.display="block";
+    e.preventDefault()
+}
+function cerrar(e){
+    var despliegue=document.querySelector('.menu-despliegue');
+        despliegue.style.display="none"
+    
+}
+ function iniciar(){
+if(window.screen >= 600){
+    var despliegue=document.querySelector('.menu-despliegue');
+    despliegue.style.display="none"
+    console.log("hola");
+}}
+
+function FuntionResize() {
+    var widthBrowser = window.outerWidth;
+    var heightBrowser = window.outerHeight;
+    if(widthBrowser >= 600){
+        var despliegue=document.querySelector('.menu-despliegue');
+        despliegue.style.display="none"
+        console.log("hola");
+    }
+}
